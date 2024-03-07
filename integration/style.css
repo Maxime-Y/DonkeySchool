@@ -1,0 +1,62 @@
+body{
+    background-color: grey;
+    
+}
+.header_portfolio {
+    background-color: grey;
+    font-size:300%;
+    padding-bottom: 
+    padding-top:;
+    padding-left:9%;
+    border:Black solid 2px;
+    
+}
+.portfolio {
+    
+}
+.onglet {
+    background-color: rgb(80, 77, 83);
+    padding-top: 5%;
+    padding-bottom:5%;
+    display : flex;
+    justify-content:center;
+    justify-content:space-around;
+    font-size:300%;
+    list-style-type:none;
+    border:black 2px solid;
+}
+.texte_onglet{
+    text-decoration:none;
+    color:rgb(148, 166, 47)
+}
+.name{
+
+    display:flex;
+    justify-content:center;
+    font-size:300%;
+    background-color: grey;
+    
+    
+}
+.container{
+    
+}
+.accueil{
+    background-color: rgb(80, 77, 83);
+    border:black 2px solid;
+}
+.presentation{
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    margin-left:20%;
+    
+    
+   
+
+
+
+}
+   
+ 
+
