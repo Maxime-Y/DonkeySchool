@@ -13,59 +13,75 @@
     <body>
         <main>
 
-            <header class="header_portfolio">
-                <h1>Mon portfolio</h1>
-            </header>
+            <header>
+                <div>
+                  <p class="portfolio">Mon portfolio</p> 
+                </div>                
+      
+            
             <nav>
-                <ul class="onglet">
-                    <li>
-                        <a class="texte_onglet" title="page d'accueil de mon portfolio" href="./index.html">Accueil</a>
+            
+                <ul>
+                    <li class="menu-deroulant-b">
+                        <a href="./index.html">Accueil</a>
                     </li>
-                    <li>
-                        <a class="texte_onglet" title="page projets de mon portfolio" href="./projet.html">Projets</a>
+                    <li class="menu-deroulant">
+                        <a href="./projet.html">Projets</a>
+                        <ul class="sous-menu">
+                            <li><a href="./projet.html#projet-rea">Projets réalisés</a></li>
+                            <li><a href="./projet.html#projet-en-cours">Projets en cours</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="texte_onglet" title="page études de mon portfolio" href="./etude.html">Etudes</a>
-                    </li>
-                    <li>
-                        <a class="texte_onglet" title="page contact de mon portfolio" href="./contact.html">Contact</a>
-                    </li>
+                    <li class="menu-deroulant">
+                        <a href="./etude.html">Etudes</a>
+                        <ul class="sous-menu">
+                            <li><a href="./etude.html#cursus">Cursus scolaire</a></li>
+                            <li><a href="./etude.html#formation">Formation</a></li>
+                        </ul>
+                    <li class="menu-deroulant">
+                        <a href="./contact.html">Contact</a>
+                        <ul class="sous-menu">
+                            <li><a href="./contact.html#reseaux">Réseaux sociaux</a></li>
+                            <li><a href="./contact.html#contact">Contactez-moi</a></li>
+                        </ul>
                 </ul>
+              </header>  
             </nav>
 
+            <div class="container_contact">
 
-            <div class="contact">
-                <h2>Contact</h2>
-                <p>
-                    <a href="mailto:Yehia.maxime@hotmail.fr">Yehia.maxime@hotmail.fr</a>
-                </p>
-            </div>
+                <div class="contact">
+                    <h2 class ="contact_title" id="contact">Contact</h2>
+                    <p>
+                        <a class="mail" href="mailto:Yehia.maxime@hotmail.fr">Yehia.maxime@hotmail.fr</a>
+                    </p>
+                </div>
 
-            <div class="telephone">
-                <img src="./media/telephone.png" alt="logo téléphone" width="70px">
-                <p>06.01.23.45.67</p>
-            </div>
+                <div class="telephone">
+                    <img class="telephone_logo" src="./media/telephone.png" alt="logo téléphone">
+                    <p class="telephone">06.01.23.45.67</p>
+                </div>
 
-            <div class="logo">
-                <a title ="lien vers mon compte github" href="https://github.com/Maxime-Y">
-                    <img src="./media/GitHub.jpg" alt="logo github" width="100px">
-                </a>
-                <a title ="lien vers mon compte github" href="">
-                    <img src="./media/linkedin.webp" alt="logo linkedin" width="100px">
-                </a>
-                <a title ="lien vers mon compte github" href="">
-                    <img src="./media/instagram.jpg" alt="logo instagram" width="100px">
-                </a>
-                <a title ="" href="">
-                    <img src="" alt="">
-                </a>
+                <div class="logo" id="reseaux">
+                    <a title ="lien vers mon compte github" href="https://github.com/Maxime-Y">
+                        <img src="./media/GitHub.jpg" alt="logo github" width="100px">
+                    </a>
+                    <a title ="lien vers mon compte github" href="">
+                        <img src="./media/linkedin.webp" alt="logo linkedin" width="100px">
+                    </a>
+                    <a title ="lien vers mon compte github" href="">
+                        <img src="./media/instagram.jpg" alt="logo instagram" width="100px">
+                    </a>
+                    <a title ="" href="">
+                        <img src="" alt="">
+                    </a>
             </div>
 
                 
             <div class="formulaire_contact">
-                <img src="./media/envellope.webp" alt="logo envellope" width="100px">
+                <img class="enveloppe" src="./media/envellope.webp" alt="logo envellope">
                 <div class="formulaire_id">
-                    <form>
+                    <form id="contact">
                         <label for="first_name">Prénom:</label>
                         <input placeholder="Votre prénom" id="first_name" name="first_name">
                     </form>
@@ -92,7 +108,8 @@
                 <div class="submit">
                     <input type="submit" value="Envoyer">
                 </div>
-            </div>              
+            </div>
+        </div>              
 
         </main>
     </body>
