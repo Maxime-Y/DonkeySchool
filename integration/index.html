@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Maxime Yehia" />
-        <meta name="description" content="page d'accueil de mon portfolio" />
-        <title>Maxime Yehia - Full Stack Developper</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="Js/code.js"></script>
-    </head>
 
-    <body>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxime Yehia" />
+    <meta name="description" content="page d'accueil de mon portfolio" />
+    <title>Maxime Yehia - Full Stack Developper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Js/code.js"></script>
+</head>
 
-            <header class="header_portfolio">
-                <h1 class="portfolio">Mon portfolio</h1>
-            </header>
-            <nav>
-                <ul class="onglet">
-                    <li>
-                        <a class="texte_onglet" title="page d'accueil de mon portfolio" href="./index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a class="texte_onglet" title="page projets de mon portfolio" href="./projet.html">Projets</a>
-                    </li>
-                    <li>
-                        <a class="texte_onglet" title="page études de mon portfolio" href="./etude.html">Etudes</a>
-                    </li>
-                    <li>
-                        <a class="texte_onglet" title="page contact de mon portfolio" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="name">                        
-                <h2>Yehia Maxime</h2>
-            </div>
-            <div class="container">
+<body>
+    <main>
 
-                <div class="accueil">
+        <header>
 
-                    
+            <div>
+                    <p class="portfolio">Mon portfolio</p> 
+            </div>                
+        
+        <nav>
+            
+            <ul>
+                <li class="menu-deroulant-b">
+                    <a href="#">Accueil</a>
+                </li>
+                <li class="menu-deroulant">
+                    <a href="#">Projets</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Projets réalisés</a></li>
+                        <li><a href="#">Projets en cours</a></li>
+                    </ul>
+                </li>
+                <li class="menu-deroulant">
+                    <a href="#">Etudes</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Expériences professionnelles</a></li>
+                        <li><a href="#">Formation</a></li>
+                    </ul>
+                <li class="menu-deroulant">
+                    <a href="#">Contact</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Réseaux sociaux</a></li>
+                        <li><a href="#">Contactez-moi</a></li>
+                    </ul>
+            </ul>
+            
+        </nav>
 
-                    <div class="card">
-                        <img src="./media/tomcruise.jpg" alt="ma photo" width="300px;">
-                        <h2 class="presentation">Présentation</h2>
+        </header>
 
-                        <section class="who i am">
-                            <h3>Full-Stack Developper</h3>
-                            <h2>Who i am</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </section>
+        <div class="name">
+            <h1>Yehia Maxime</h1>
+        </div>
+        <div class="container">            
+            
+            <img class="photo" src="./media/tomcruise.jpg" alt="ma photo">
+           
+            <div class="texte_accueil">
 
-                        <section class="myskills">
-                            <h2>My skills</h2>
-                            <ul>
-                                <li>Html</li>
-                                <li>Css</li>
-                                <li>Javascript</li>
-                                <li>Php</li>
-                                <li>MySql</li>
-                            </ul>
-                            <ul>
-                                <li>Symfony</li>
-                                <li>NodeJS</li>
-                                <li>ReactJS</li>
-                                <li>Angular</li>
-                                <li>Vue.JS</li>
-                            </ul>
-                        </section>
-                    </div> 
-
-                </div> 
-
+                <h2 class="develloper">Full-Stack Developper</h2>
+                <section>
+                    <h3 class="develloper"></h3>
+                    <h2 class="about">About me</h2>
+                    <p class="texte">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        
+                        
+                    </p>
+                </section>             
+                
             </div>
 
-        </main>  
-    </body>
-    
-    <footer>
-        <p>copyright&copyPortfolio.com</p>
-    </footer>     
+        </div>
+
+    </main>
+</body>
+
+<footer class="footer">
+    <p>copyright&copyPortfolio.com</p>
+</footer>
+
 </html>
