@@ -13,7 +13,7 @@
 
 <body>
     <main>
-        
+
 
         <nav>
 
@@ -46,65 +46,73 @@
             </ul>
 
         </nav>
-    
+
         <section class="container_contact">
 
             <div class="container_contact">
 
-                <div class="contact">
-                    
+                <div class="logo">
+                    <a title="lien vers mon compte github" href="https://github.com/Maxime-Y">
+                        <img class="github" src="./media/github.png" alt="logo github">
+                    </a>
+                    <a vtitle="lien vers mon compte linkedin" href="">
+                        <img class="linkedin" src="./media/Linkedin.png" alt="logo linkedin">
+                    </a>
+                </div>
+                <div class="separation">
+
                 </div>
 
                 <div class="telephone">
                     <img class="telephone_logo" src="./media/telephone.png" alt="logo téléphone">
                     <p class="telephone">06.01.23.45.67</p>
                 </div>
+                <div class="separation">
 
-                <div class="logo">
-                    <a title="lien vers mon compte github" href="https://github.com/Maxime-Y">
-                        <img class="github" src="./media/GitHub.jpg" alt="logo github">
-                    </a>
-                    <a vtitle="lien vers mon compte linkedin" href="">
-                        <img class="linkedin" src="./media/linkedin.webp" alt="logo linkedin">
-                    </a>
-                    <a title="lien vers mon compte instagram" href="">
-                        <img class="instagram" src="./media/instagram.jpg" alt="logo instagram">
-                    </a>
-                    <a title="" href="">
-                        <img src="" alt="">
-                    </a>
                 </div>
 
+                <div class="logo">
 
+                    <a title="lien vers mon compte instagram" href="">
+                        <img class="instagram" src="./media/instagram.png" alt="logo instagram">
+                    </a>
+                    <a title="lien vers mon compte facebook" href="">
+                        <img class="facebook" src="./media/facebook.png" alt="logo facebook">
+                    </a>
+                </div>
+            </div>
+
+            <img class="envellope" src="./media/envellope.png" alt="logo envellope">
         </section>
 
 
 
 
+        <section>
+
+            
+            <div class="container_form">
+
+                <h1 class="form">Contactez moi</h1>
+                <form action="/action_page.php">
+                    <label for="name">Nom & prénom</label>
+                    <input type="text" id="name" name="firstname" placeholder="Votre nom et prénom">
+
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+                    <label for="emailAddress">Email</label>
+                    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
 
 
-        
-        <div class="container_form">
-            <h1 class="form">Contactez moi</h1>
-            <form action="/action_page.php">
-              <label for="name">Nom & prénom</label>
-              <input type="text" id="name" name="firstname" placeholder="Votre nom et prénom">
-          
-              <label for="sujet">Sujet</label>
-              <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
-          
-              <label for="emailAddress">Email</label>
-              <input id="emailAddress" type="email" name="email" placeholder="Votre email">
-          
-          
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-          
-              <input type="submit" value="Envoyer">
-            </form>
-          </div>
-          
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
 
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+
+        </section>
 
         <main>
 </body>
