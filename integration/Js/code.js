@@ -1,3 +1,10 @@
+const btn = document.querySelector('#btn');
+const c1 = document.querySelector('#c1')
+btn.addEventListener('mouseover',()=>{
+     c1.style.display = 'block';
+   if (btn.style.display = 'none'){
+       }
+})
 var canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d');
 
