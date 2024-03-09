@@ -105,6 +105,10 @@ nav>ul>li:hover>a {
   color: rgb(73, 94, 93);
   font-family: "Anta", sans-serif;
 }
+nav>ul>li:hover>p>a {
+  color: rgb(73, 94, 93);
+  font-family: "Anta", sans-serif;
+}
 
 .sous-menu>li:hover {
   background-color: rgb(90, 88, 88);
@@ -132,7 +136,7 @@ nav>ul>li:hover>a {
 @keyframes apparitionSousMenu {
   0% {
     box-shadow: 0px 3px 3px 1px rgba(171, 181, 111, 0);
-    border-top: 3px solid #99ab80;
+    border-top: 3px solid #fefffc;
   }
 
   30% {
@@ -246,6 +250,7 @@ h1 {
 
 
 /*Projets*/
+
 .titre_projet {
   display: flex;
   justify-content: center;
@@ -309,6 +314,7 @@ h1 {
 
 
 /*Etudes*/
+
 .container_etude {
   max-width: 100%;
   height: 200px;
@@ -345,9 +351,10 @@ h1 {
 
 
 /*contact*/
+
 .container_contact {
-  margin: ;
-  padding: 5%;
+  padding-top:1%;
+  padding-bottom:2%;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -357,7 +364,7 @@ h1 {
   display: flex;
   justify-content: center;
   border:white 2px solid;
-  margin:0 30% 0 30% ;
+  margin:0 35% 0 35% ;
   background: linear-gradient(#303434, #73b5a5);
   border-radius:5% 5% 5% 5%;
   
@@ -394,9 +401,9 @@ h1 {
 }
 
 .linkedin {
-  width: 30%;
-  height: 100%;
-  margin-left:50%;
+  width: 20%;
+  height: 80%;
+  margin-left:53%;
 }
 
 .instagram {
