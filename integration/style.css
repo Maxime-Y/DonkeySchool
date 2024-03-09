@@ -2,13 +2,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&display=swap);
 
 body {
-  background-color: rgb(73, 94, 93);
+  
+  background-color: rgb(12, 15, 12);
   margin: 10px;
 }
 
 @media (max-width: 1388px) {
   body {}
 }
+
+
 
 /*onglets*/
 
@@ -100,11 +103,11 @@ li a {
 }
 
 nav>ul>li:hover>a {
-  color: rgb(73, 94, 93);
+  color: rgb(5, 114, 5);
   font-family: "Anta", sans-serif;
 }
 nav>ul>li:hover>p>a {
-  color: rgb(73, 94, 93);
+  color: rgb(5, 114, 5);
   font-family: "Anta", sans-serif;
 }
 
@@ -161,11 +164,8 @@ nav>ul>li>p {
   margin: 20px 0 0 0;
   font-family: "Anta", sans-serif;
   border-radius:5px;
-
-
 }
-body input{
-  
+body input{  
   background-color: black;
   height:83vh;
   width:100%;
@@ -176,15 +176,17 @@ body input{
   align-items:center;
 }
 .btn{
-  background-color:rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size:200%;
+  background-color: #113c3a;
+  background-image:linear-gradient(rgb(12, 15, 12),rgb(5, 114, 5));
+  color:white;
+  font-size:7vw;
   border:0.3vw solid green;
-  
+  font-family: "Anta", sans-serif;
+   border:0.3vw solid green;
 }
 .btn:hover{
-  background-color:#49d1ca;
-  border:0.3vw solid green;
+  
+ 
   display:none;
 }
 .canvas{
@@ -197,16 +199,15 @@ h1 {
   display: flex;
   justify-content: center;
   font-size: 700%;
-  background-color: rgb(73, 94, 93);
-  margin-bottom: 2%;
-  margin-top: 5%;
+  background-color: rgb(12, 15, 12);
+  
+  margin: 5% 35% 2% 35%;
   color: rgb(255, 255, 255);
   font-family: "Anta", sans-serif;
 }
 
 .container_accueil {
-  background-color: rgb(194, 212, 205);
-  background: linear-gradient(#303434, #73b5a5);
+  background-image:linear-gradient(rgb(12, 15, 12),rgb(5, 114, 5));
   max-width: 100%;
   margin: 0 auto;
   border-radius: 20px;
@@ -235,8 +236,8 @@ h1 {
 }
 
 .photo {
-  height: 30%;
-  width: 20%;
+  height: 40%;
+  width: 30%;
   object-fit: cover;
   border-radius: 50%;
   float: left;
@@ -246,7 +247,8 @@ h1 {
 }
 
 .develloper {
-  font-size: 50px;
+  text-align:center;
+  font-size: 3vw;
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Anta", sans-serif;
@@ -262,11 +264,14 @@ h1 {
   text-align: justify;
   margin-bottom: 20px;
   font-family: "Dancing Script", cursive;
+  color:white;
 }
 
 .about {
-  font-size: 35px;
+  text-align:center;
+  font-size: 2vw;
   margin-bottom: 20px;
+  color:white;
 }
 
 
@@ -275,7 +280,7 @@ h1 {
 .titre_projet {
   display: flex;
   justify-content: center;
-  font-size: 70px;
+  font-size: 4vw;
   margin-bottom: 6%;
   margin-top: 5%;
   color: white;
@@ -283,7 +288,7 @@ h1 {
 
 .container_projet {
   background-color: rgb(194, 212, 205);
-  background: linear-gradient(#303434, #73b5a5);
+  background-image:linear-gradient(rgb(12, 15, 12),rgb(5, 114, 5));
   max-width: 100%;
   margin: 0 auto;
   margin-left: 10%;
@@ -320,7 +325,7 @@ h1 {
 
 .nom_projet1 {
   text-align: center;
-  font-size: 200%;
+  font-size: 3vw;
   color: aliceblue;
   margin: 2% 0 2% 0;
 
@@ -328,7 +333,7 @@ h1 {
 
 .nom_projet2 {
   text-align: center;
-  font-size: 200%;
+  font-size: 3vw;
   color: aliceblue;
   margin: 2% 0 2% 0;
 }
@@ -386,7 +391,7 @@ h1 {
   justify-content: center;
   border:white 2px solid;
   margin:0 35% 0 35% ;
-  background: linear-gradient(#303434, #73b5a5);
+  background-image:linear-gradient(rgb(12, 15, 12),rgb(5, 114, 5));
   border-radius:5% 5% 5% 5%;
   
  
