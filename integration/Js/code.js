@@ -36,3 +36,15 @@ function draw() {
   }
 }
 setInterval(draw, 50);
+function canvasFun(){
+    var canvas = document.getElementById('c1'); 
+    if (canvas.getContext){    
+      var ctx = canvas.getContext('2d'); 
+      ctx.font = "20pt Calibri,Geneva,Arial";
+      ctx.strokeStyle = "rgb(0,0,0)";
+      ctx.fillStyle = "rgb(0,20,180)";
+      ctx.strokeText("welcome to my portfolio", 10, 20);
+      ctx.fillText("Autre exemple", 10, 60);
+    }  
+  }
+  window.onload=canvasFun;
