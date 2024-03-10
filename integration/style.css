@@ -159,7 +159,7 @@ nav>ul>li:hover>p>a {
 }
 
 .menu-deroulant:hover>.sous-menu {
-  animation: apparitionSousMenu 1s forwards;
+  animation: apparitionSousMenu 2s forwards;
 }
 /*index*/
 .lapin{
@@ -167,7 +167,7 @@ nav>ul>li:hover>p>a {
   width:10vw;
   height:15vw;
   left:43.5vw;
-  margin-top:3vw;
+  margin-top:4.5vw;
 }
 .separation_index{
   height: 0.2vw;
@@ -177,7 +177,7 @@ nav>ul>li:hover>p>a {
   top: 6vw;
   Background-color: white;
   position: relative;
-  top:19vw;
+  top:20vw;
   left:34vw;
   box-shadow: 8px 15px 15px rgb(72, 183, 62);
 }
@@ -189,7 +189,7 @@ nav>ul>li:hover>p>a {
   top: 6vw;
   Background-color: white;
   position: relative;
-  top:30vw;
+  top:29vw;
   left:34vw;
   box-shadow: 8px 15px 15px rgb(72, 183, 62);
 }
@@ -213,6 +213,7 @@ nav>ul>li>p {
   margin: 20px 0 0 0;
   font-family: "Anta", sans-serif;
   border-radius: 5px;
+  transition:transform 1.5s ease;
 }
 nav>ul>li>p:hover {
   font-size: 180%;
@@ -221,7 +222,7 @@ nav>ul>li>p:hover {
   font-family: "Anta", sans-serif;
   border-radius: 5px;
   transform:scale(0.9);
-  transition:transform 0.5s ease;
+  transition:transform 1s ease;
 }
 
 
@@ -493,30 +494,49 @@ h1 {
 .body_etude {
   background-image: linear-gradient(90deg, rgb(5, 114, 5), rgb(0, 0, 0) 50%, rgb(5, 114, 5))
 }
-
+.container_etude{
+  max-width:90vw;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  gap:7vw;
+}
+.container_ecole{
+  width:40vw;
+  border:white 2px solid;
+  padding:4vw;
+  
+}
+.container_donkey{
+  width:30vw;
+  height:20vw;
+  border:white 2px solid;
+  margin:auto;
+  display:flex;
+  padding:4vw;
+}
 .separation_etude1{
   height: 0.2vw;
-  width: 30vw;
+  width: 25vw;
   display: flex;
   text-align: center;
   top: 6vw;
   Background-color: white;
   position: relative;
   top:8.2vw;
-  left:1.9vw;
+  left:5.8vw;
   box-shadow: 8px 15px 15px black;
 }
 
-
 .separation_etude3{
   height: 0.2vw;
-  width: 30vw;
+  width: 25vw;
   display: flex;
   text-align: center;
   top: 6vw;
   Background-color: white;
   position: relative;
-  left:67vw;
+  left:68.1vw;
   top:8vw;
   box-shadow: 8px 15px 15px black;
 }
@@ -537,36 +557,31 @@ h1 {
   color: white;
 }
 
-
-.div1 {
-  height: 20px;
-  width: 20px;
-  background-color: grey;
+.logo_ecole{
+  width:10vw;
+  height:10vw;
+}
+.donkey_logo{
+  width:10vw;
+  height:8vw;
+  border-radius:2vw;
+  display:flex;
+  justify-content:center;
+  text-align:justify;
 }
 
-.div2 {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(14, 4, 37);
+.texte_etude{
+  color:white;
 }
-
-.div3 {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(115, 20, 20);
+.titre_etude{
+  color:rgb(201, 182, 5);
+  font-size:2vw;
 }
+.titre_ecole{
 
-.div4 {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(61, 40, 98);
 }
-
-
-
-
-
 /*contact*/
+
 .body_contact {
   background-image: linear-gradient(rgb(5, 114, 5), rgb(0, 0, 0) 40%, rgb(5, 114, 5) 70%);
 }
@@ -593,6 +608,8 @@ h1 {
   margin-right: 13%;
   margin-bottom: 2vw;
   padding-top: 7%;
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+  transition: filter 0.3s ease;
 }
 
 .telephone_num {
@@ -600,7 +617,7 @@ h1 {
   margin-top: 14%;
   margin-right: 19%;
   color: white;
-  text-shadow: 5px 5px 15px black
+  text-shadow: 5px 5px 15px rgb(255, 255, 255)
 }
 
 .logo {
@@ -823,7 +840,7 @@ h2.form {
   font-size: 25px;
   font-family: "Rubik", sans-serif;
   position: absolute;
-  right: 0.8vw;
+  right: 44vw;
   top: 15vw;
   padding: 8px 12px 8px 12px;
   border: 2px solid rgb(255, 255, 255);
