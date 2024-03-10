@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Anta&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&display=swap);
 
 body {
@@ -32,15 +32,14 @@ nav {
   top: 0;
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
   z-index: 100;
-}
+  }
 
 nav>ul {
   display: flex;
   text-align: center;
   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
   height: var(--hauteur-menu);
-
-}
+ }
 
 nav ul {
   list-style-type: none;
@@ -60,7 +59,15 @@ nav>ul>li>a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  
+}
+nav>ul>li>a:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform:scale(1.1);
+  transition:transform 3s ease;
 }
 
 li a {
@@ -74,9 +81,7 @@ li a {
   font-size: 15px;
   margin-left: 7px;
   display: inline-block;
-
 }
-
 .menu-deroulant-b>a:after {
   font-size: 15px;
   margin-left: 7px;
@@ -106,6 +111,7 @@ li a {
 nav>ul>li:hover>a {
   color: rgb(5, 114, 5);
   font-family: "Anta", sans-serif;
+  transform:scale(1.3)
 }
 
 nav>ul>li:hover>p>a {
@@ -131,7 +137,6 @@ nav>ul>li:hover>p>a {
     transform: rotate(90deg);
   }
 }
-
 .menu-deroulant:hover>a:after {
   animation: rotationFleche 0.2s linear forwards;
 }
@@ -156,7 +161,13 @@ nav>ul>li:hover>p>a {
 .menu-deroulant:hover>.sous-menu {
   animation: apparitionSousMenu 1s forwards;
 }
-
+/*index*/
+.lapin{
+  position:absolute;
+  top:0;
+  border:white 4px solid;
+  
+}
 /*page d'accueil*/
 
 
@@ -167,10 +178,20 @@ nav>ul>li>p {
   font-family: "Anta", sans-serif;
   border-radius: 5px;
 }
+nav>ul>li>p:hover {
+  font-size: 180%;
+  background-color: rgb(255, 255, 255);
+  margin: 20px 0 0 0;
+  font-family: "Anta", sans-serif;
+  border-radius: 5px;
+  transform:scale(0.9);
+  transition:transform 0.5s ease;
+}
+
 
 body input.btn {
   background-color: black;
-  height: 83vh;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -181,18 +202,15 @@ body input.btn {
 
 .btn {
   background-color: #113c3a;
-  background-image: linear-gradient(rgb(12, 15, 12), rgb(5, 114, 5));
+  background-image: linear-gradient(black,  rgb(5, 114, 5) 70%,black);
   color: white;
   font-size: 7vw;
-  border: 0.3vw solid green;
+  border: 0.1vw solid green;
   font-family: "Anta", sans-serif;
-  border: 0.3vw solid green;
   text-shadow:BLACK 20px 0px 40px ; 
 }
 
 .btn:hover {
-
-
   display: none;
 }
 
@@ -201,7 +219,33 @@ body input.btn {
   max-width: 100%;
   max-height: 100%;
 }
+.separation_about1{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top:7.3vw;
+  left:1vw;
+  box-shadow: 8px 15px 15px rgb(72, 183, 62);
+}
 
+
+.separation_about3{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  left:67.6vw;
+  top:7vw;
+  box-shadow: 8px 15px 15px rgb(72, 183, 62);
+  
+}
 h1 {
   text-shadow: 5px 5px 15px black;
   display: flex;
@@ -264,7 +308,7 @@ h1 {
   shape-outside: margin-box;
   margin: 0 2vw 0 2vw;
   border: black 4px solid;
-  filter: drop-shadow(0px 0px 40px rgb(85, 201, 72));
+  filter: drop-shadow(0px 0px 20px rgb(85, 201, 72));
   transition: filter 0.3s ease;
 }
 
@@ -310,6 +354,35 @@ h1 {
 
 
 /*Projets*/
+.separation_projet1{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top:8.3vw;
+  left:1.3vw;
+  box-shadow: 8px 15px 15px rgb(72, 183, 62);
+}
+
+
+.separation_projet3{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  left:67vw;
+  top:8vw;
+  box-shadow: 8px 15px 15px rgb(72, 183, 62);
+}
+/*h2{
+  text-shadow:rgb(85, 201, 72) 20px 20px 40px ; 
+}*/
 
 .titre_projet {
   display: flex;
@@ -319,6 +392,13 @@ h1 {
   margin-top: 5%;
   color: white;
 }
+.nom_projet1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nom_projet2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .container_projet {
   background-image: linear-gradient(rgb(12, 15, 12), rgb(5, 114, 5));
@@ -378,12 +458,49 @@ h1 {
   background-image: linear-gradient(90deg, rgb(5, 114, 5), rgb(0, 0, 0) 50%, rgb(5, 114, 5))
 }
 
-linear-gradient(0deg, blue, green 40%, red) .container_etude {
-  max-width: 100%;
-  height: 200px;
-  background-color: rgb(252, 252, 252);
+.separation_etude1{
+  height: 0.2vw;
+  width: 30vw;
   display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top:8.2vw;
+  left:1.9vw;
+  box-shadow: 8px 15px 15px black;
 }
+
+
+.separation_etude3{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  left:67vw;
+  top:8vw;
+  box-shadow: 8px 15px 15px black;
+}
+.cursus{
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  margin-bottom: 6%;
+  margin-top: 5%;
+  color: white;
+}
+.formation{
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  margin-bottom: 6%;
+  margin-top: 5%;
+  color: white;
+}
+
 
 .div1 {
   height: 20px;
@@ -435,8 +552,8 @@ linear-gradient(0deg, blue, green 40%, red) .container_etude {
 }
 
 .telephone_logo {
-  width: 100px;
-  height: 180px;
+  width: 10vw;
+  height: 7vw;
   margin-right: 13%;
   margin-bottom: 2vw;
   padding-top: 7%;
@@ -459,14 +576,17 @@ linear-gradient(0deg, blue, green 40%, red) .container_etude {
 .github {
   height: 15vw;
   width: 14vw;
+  margin-left:1vw;
   margin-top: 2vw;
   transition: filter 1.5s ease;
+  transition:transform 2s ease;
 }
 
 .linkedin {
   width: 17vw;
   height: 18vw;
   transition: filter 1.5s ease;
+  transition:transform 2s ease;
 }
 
 .instagram {
@@ -474,43 +594,52 @@ linear-gradient(0deg, blue, green 40%, red) .container_etude {
   height: 14vw;
   margin-bottom: 1vw;
   transition: filter 1.5s ease;
+  transition:transform 2s ease;
 }
 
 .facebook {
   height: 14vw;
   width: 12vw;
   transition: filter 1.5s ease;
+  transition:transform 2s ease;
 }
 
 .github:hover {
   height: 15vw;
   width: 14vw;
   margin-top: 2vw;
-  filter: drop-shadow(0px 0px 20px rgb(85, 201, 72));
+  filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
   transition: filter 0.3s ease;
+  transform:scale(1.2);
+  transition:transform 1s ease;
 }
 
 .linkedin:hover {
   width: 17vw;
   height: 18vw;
-  filter: drop-shadow(0px 0px 20px rgb(85, 201, 72));
+  filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
   transition: filter 0.3s ease;
+  transform:scale(1.2);
+  transition:transform 1s ease;
 }
 
 .instagram:hover {
   width: 12vw;
   height: 14vw;
   margin-bottom: 1vw;
-  filter: drop-shadow(0px 0px 20px rgb(85, 201, 72));
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
   transition: filter 0.3s ease;
-
+  transform:scale(1.2);
+  transition:transform 1s ease;
 }
 
 .facebook:hover {
   height: 14vw;
   width: 12vw;
-  filter: drop-shadow(0px 0px 20px rgb(85, 201, 72));
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
   transition: filter 0.3s ease;
+  transform:scale(1.2);
+  transition:transform 1s ease;
 }
 
 .separation1 {
@@ -521,6 +650,7 @@ linear-gradient(0deg, blue, green 40%, red) .container_etude {
   top: 6vw;
   Background-color: white;
   position: relative;
+  box-shadow: 8px 15px 15px white;
 }
 
 .separation2 {
@@ -532,6 +662,7 @@ linear-gradient(0deg, blue, green 40%, red) .container_etude {
   text-align: center;
   Background-color: white;
   position: relative;
+  box-shadow: 8px 15px 15px white;
 
 }
 
@@ -539,6 +670,9 @@ linear-gradient(0deg, blue, green 40%, red) .container_etude {
 .envellope {
   max-width: 10%;
   margin-left: 45%;
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+  transition: filter 0.3s ease;
+  
 
 }
 
@@ -601,6 +735,9 @@ input[type=submit] {
   cursor: pointer;
   font-size: 2em;
   transition: box-shadow 1.5s ease;
+  width:10vw;
+  height:4vw;
+  
 }
 
 input[type=submit]:hover {
@@ -611,7 +748,7 @@ input[type=submit]:hover {
 }
 
 h2.form {
-  margin-bottom: 8%;
+  
   text-align: center;
   color: white;
   font-size: 7vw;
@@ -627,14 +764,13 @@ h2.form {
   /* Ajouter box-sizing */
   box-sizing: border-box;
   border-radius: 5px;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(5, 114, 5));
-  padding: 20px;
-  width: 100%;
+  background-image: 0deg,linear-gradient(rgb(0, 0, 0), rgb(5, 114, 5));
+  padding: 5vw 10vw;  
   /* redéfinition 400 + 2*20 */
-  max-width: 25%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 20vw;
   margin-bottom: 2%;
-  box-shadow: 5px 5px 15px black;
+  
 }
 
 .footer {
@@ -646,14 +782,14 @@ h2.form {
 .footer_accueil {}
 
 .watch {
-  color: rgb(15, 14, 14);
+  color: rgb(255, 255, 255);
   font-size: 25px;
   font-family: "Rubik", sans-serif;
   position: absolute;
   right: 0.8vw;
   top: 15vw;
   padding: 8px 12px 8px 12px;
-  border: 2px solid rgb(26, 26, 26);
+  border: 2px solid rgb(255, 255, 255);
   text-decoration: none;
   transform: scale(1);
 }
