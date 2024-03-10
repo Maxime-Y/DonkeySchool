@@ -59,6 +59,7 @@ nav>ul>li>a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition:transform 1.5s ease;
   
 }
 nav>ul>li>a:hover {
@@ -67,7 +68,7 @@ nav>ul>li>a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   transform:scale(1.1);
-  transition:transform 3s ease;
+  transition:transform 1s ease;
 }
 
 li a {
@@ -111,7 +112,6 @@ li a {
 nav>ul>li:hover>a {
   color: rgb(5, 114, 5);
   font-family: "Anta", sans-serif;
-  transform:scale(1.3)
 }
 
 nav>ul>li:hover>p>a {
@@ -163,10 +163,46 @@ nav>ul>li:hover>p>a {
 }
 /*index*/
 .lapin{
+  position:absolute;    
+  width:10vw;
+  height:15vw;
+  left:43.5vw;
+  margin-top:3vw;
+}
+.separation_index{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top:19vw;
+  left:34vw;
+  box-shadow: 8px 15px 15px rgb(72, 183, 62);
+}
+.separation_index2{
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top:30vw;
+  left:34vw;
+  box-shadow: 8px 15px 15px rgb(72, 183, 62);
+}
+.welcome{
+  font-size:6vw;
+  color:white;
   position:absolute;
-  top:0;
-  border:white 4px solid;
-  
+  font-size: 7vw;
+  font-family: "Anta", sans-serif;
+  text-shadow:white 20px 0px 40px ; 
+  left:10.5vw;
+  margin-top:19.4vw;
+
 }
 /*page d'accueil*/
 
@@ -754,6 +790,7 @@ h2.form {
   font-size: 7vw;
   display: flex;
   justify-content: center;
+  text-shadow:black 5px 5px 35px;
 }
 
 .form_texte {
