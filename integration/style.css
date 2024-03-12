@@ -7,22 +7,9 @@ body {
   background: linear-gradient(rgba(5, 114, 5, 1), rgba(0, 0, 0, 0.5), rgba(5, 114, 5, 1)),
                    url("./media/fondecran.jpg")fixed
                    
-                 ;
-               
+                 ;             
   
 }
-
-@media (max-width: 600px) {
-  body {}
-}
-
-/*@media (prefers-color-scheme: dark) {
-  html {
-  filter: invert(100%);
-  }
-  }*/
-
-/*onglets*/
 
 :root {
   --hauteur-menu: 120px;
@@ -225,7 +212,31 @@ nav>ul>li>p:hover {
   left: 34vw;
   box-shadow: 8px 5px 5px rgb(255, 255, 255);
 }
+/*.separation_index {
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top: 20vw;
+  left: 34vw;
+  box-shadow: 8px 5px 5px rgb(255, 255, 255);
+}
 
+.separation_index2 {
+  height: 0.2vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  top: 6vw;
+  Background-color: white;
+  position: relative;
+  top: 29vw;
+  left: 34vw;
+  box-shadow: 8px 5px 5px rgb(255, 255, 255);
+}*/
 .welcome {
   font-size: 6vw;
   color: white;
@@ -372,20 +383,20 @@ h1 {
   float: left;
   shape-outside: margin-box;
   margin: 0 2vw 0 2vw;
-  border: black 2px solid;
-  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.3)
-  
+  border: rgb(255, 255, 255) 3px solid;
+  transition:all 1.5s ease;
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .photo:hover {
   height: 25vw;
-  width: 30vw;
-  object-fit: cover;
+  width: 30vw;  
   border-radius: 50%;
   float: left;
   shape-outside: margin-box;
-  margin: 0 2vw 0 2vw;
-  border: black 2px solid;
+  margin: 0 2vw 0 2vw;  
+  transition:all 0.7s ease;
+  opacity:0.5;
 }
 
 
@@ -423,7 +434,7 @@ h1 {
 
 .about {
   text-align: center;
-  font-size: 2vw;
+  font-size: 2em;
   margin-bottom: 20px;
   color: white;
 }
@@ -517,6 +528,9 @@ h1 {
   float: left;
   shape-outside: margin-box;
   margin: 20px 20px 5px 20px;
+  border: rgb(255, 255, 255) 3px solid;
+  transition:all 1.5s ease;
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .img_projet2 {
@@ -527,6 +541,33 @@ h1 {
   float: right;
   shape-outside: margin-box;
   margin: 20px 20px 5px 20px;
+  border: rgb(255, 255, 255) 3px solid;
+  transition:all 1.5s ease;
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.3);
+  
+}
+.img_projet:hover {
+  height: 40%;
+  width: 25%;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 20px 20px 5px 20px;
+  transition:all 0.7s ease;
+  opacity:0.5;
+}
+
+.img_projet2:hover {
+  height: 40%;
+  width: 25%;
+  object-fit: cover;
+  border-radius: 50%;
+  float: right;
+  shape-outside: margin-box;
+  margin: 20px 20px 5px 20px;
+  transition:all 0.7s ease;
+  opacity:0.5;
 }
 
 .nom_projet1 {
@@ -583,6 +624,7 @@ h1 {
   align-items:center;
   gap: 30vw;
   transition: all 1.5s ease;
+  
 }
 .container_ecole2 {
   width: 80vw;  
@@ -992,3 +1034,16 @@ h2.form {
   text-decoration: none;
   transform: scale(1.6);
 }
+@media screen and (max-width: 600px) {
+  body {
+
+
+  }
+}
+/*@media (prefers-color-scheme: dark) {
+  html {
+  filter: invert(100%);
+  }
+  }*/
+
+/*onglets*/
