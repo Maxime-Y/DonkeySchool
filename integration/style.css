@@ -191,11 +191,11 @@ nav>ul>li>p:hover {
 }
 
 .header {
-  display:none;
+  display: none;
   position: fixed;
   z-index: 999;
   width: 100%;
-  max-width: 100%;  
+  max-width: 100%;
   background: #ffffff;
   box-sizing: border-box;
   border-bottom: 1px solid #fff;
@@ -299,6 +299,20 @@ li {
   height: 15vw;
   left: 43.5vw;
   margin-top: 4.5vw;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 
 .separation_index {
@@ -332,7 +346,21 @@ li {
   text-shadow: white 20px 0px 40px;
   left: 10.5vw;
   margin-top: 19.3vw;
+  animation-duration: 2s;
+  animation-name: slidein;
 
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 body input.btn {
@@ -411,7 +439,7 @@ h1 {
 .container_accueil {
   max-width: 100%;
   margin: 0 2.8vw 1.9vw 2.8vw;
-  border-radius: 1.4vw; 
+  border-radius: 1.4vw;
   padding: 0 0 1vw 2.8vw;
 
 }
@@ -478,7 +506,7 @@ h1 {
 .texte_accueil {
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 2em ;
+  font-size: 2em;
   text-align: justify;
   margin-bottom: 20px;
   font-family: "Dancing Script", cursive;
@@ -1040,7 +1068,7 @@ label {
 input[type=submit] {
   background-color: #000000;
   color: white;
-  
+
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1085,16 +1113,14 @@ h2.form {
 .footer {
   display: flex;
   justify-content: center;
-  height:50px;
+  height: 50px;
   color: white;
   font-size: 1.3em;
-  
+
 }
 
 @media screen and (max-width: 1113px) {
-  body {
-   
-  }
+  body {}
 
   .lapin {
     position: relative;
@@ -1115,8 +1141,8 @@ h2.form {
     display: block;
   }
 
-  .header{
-    display:block;
+  .header {
+    display: block;
   }
 
   .develloper {
@@ -1256,9 +1282,9 @@ h2.form {
 
   .footer {
     font-size: 0.7em;
-    padding-top:4vh;
+    padding-top: 4vh;
   }
-  }
+}
 
 /*@media screen and(max-width=730px) {
   body {
