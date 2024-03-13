@@ -857,6 +857,7 @@ h1 {
 
 .titre_contact {
   font-size: 2em;
+  color:rgb(27, 73, 27)
 }
 
 .telephone {
@@ -2025,6 +2026,15 @@ h2.form {
       color: white;
       font-size: 1.3em;
       
+    }
+    
+  }
+  @media screen and (min-width: 600px){
+
+    body{
+      background: linear-gradient(rgb(27, 75, 27), rgba(40, 69, 58, 0.5), rgb(9, 52, 9)),
+    url("./media/fondecran.jpg")fixed;
+      background-size: cover;
     }
     
   }
