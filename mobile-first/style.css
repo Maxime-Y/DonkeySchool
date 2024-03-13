@@ -218,7 +218,7 @@ nav>ul>li>p:hover {
 .burger_titre:hover {
   font-size: 0.8em;
   color: #088214;
-  text-shadow: 5px 5px 15px green;
+  
 }
 
 .burger_titre_main {
@@ -235,6 +235,13 @@ nav>ul>li>p:hover {
   text-decoration: none;
   margin-left: 10px;
   color: black;
+  
+}
+#header_title:hover {
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+  text-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
 .header ul,
@@ -313,12 +320,12 @@ li {
 }
 
 .lapin {
-  display:none;
+  display: none;
   position: relative;
   width: 10vw;
   height: 15vw;
   left: 43.5vw;
-  bottom:55%;
+  bottom: 55%;
 }
 
 .separation_index {
@@ -350,7 +357,7 @@ li {
   position: absolute;
   font-size: 7vw;
   font-family: "Anta", sans-serif;
-  text-shadow: white 20px 0px 40px;
+  text-shadow: rgb(255, 255, 255) 20px 0px 40px;
   left: 10.5vw;
   margin-top: 19.3vw;
   animation-duration: 2s;
@@ -1081,16 +1088,16 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   font-size: 2vw;
-  transition: box-shadow 1.5s ease;
+  transition: all 1.5s ease;
   width: 10vw;
   height: 4vw;
 }
 
 input[type=submit]:hover {
-  background-color: white;
-  color: black;
+  background-color: rgb(10, 102, 21);
+  color: rgb(255, 255, 255);
   box-shadow: rgb(0, 0, 0) 0 0 40px;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.5s ease;
 }
 
 .form {
@@ -1105,7 +1112,7 @@ input[type=submit]:hover {
 
 .form_texte {
   color: white;
-  font-size:1rem;
+  font-size: 1rem;
 }
 
 .container_form {
@@ -1152,40 +1159,6 @@ input[type=submit]:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@media screen and(max-width=730px) {
-  body {
-    display: flex;
-    align-items: center;
-  }
-
-}
-
 /*@media (prefers-color-scheme: dark) {
   html {
   filter: invert(100%);
@@ -1218,8 +1191,8 @@ input[type=submit]:hover {
     align-items: center;
   }
 
-  .lapin {   
-    display:block;
+  .lapin {
+    display: block;
     position: absolute;
     width: 10vw;
     height: 15vw;
@@ -1333,17 +1306,14 @@ input[type=submit]:hover {
     text-shadow: rgb(1, 1, 1) 0px 0px 40px;
     position: relative;
     bottom: 5vh;
-
-
   }
-
   .container_accueil {
     max-width: 100%;
     margin: 0 2.8vw 0 2.8vw;
     border-radius: 1.4vw;
     padding: 0 0 1vw 2.8vw;
     position: relative;
-    bottom: 13vh; 
+    bottom: 13vh;
   }
 
   .container_accueil::after {
@@ -1479,11 +1449,11 @@ input[type=submit]:hover {
   }
 
 
-  .container_projet {   
+  .container_projet {
     max-width: 100%;
     padding-left: 1.4vw;
     padding-top: 1.4vw;
-    padding-bottom: 1.4vw;    
+    padding-bottom: 1.4vw;
     margin-top: 3.5vw;
     border-radius: 1.4vw;
     margin: 5vw 10vw 5vw 10vw;
@@ -1558,11 +1528,6 @@ input[type=submit]:hover {
 
 
   /*Etudes*/
-
-  .body_etude {
-    background-image: linear-gradient(rgba(5, 114, 5, 1), rgba(0, 0, 0, 0.5), rgba(5, 114, 5, 1)),
-      url("./media/fondecran.jpg");
-  }
 
   .cursus {
     font-size: 5em;
@@ -1997,7 +1962,7 @@ input[type=submit]:hover {
 
   .form_texte {
     color: white;
-    font-size:2rem;
+    font-size: 2rem;
   }
 
   .container_form {
