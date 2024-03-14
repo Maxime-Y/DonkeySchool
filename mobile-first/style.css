@@ -26,6 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Anta", sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -55,7 +56,6 @@ nav>ul>li {
   position: relative;
   height: 100%;
   flex: 1;
-
 }
 
 nav>ul>li>a {
@@ -70,19 +70,18 @@ nav>ul>li>a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 li a {
   text-decoration: none;
   color: black;
-
+  font-size :1em;
 }
 
 .menu-deroulant>a:after {
   content: '>';
   font-size: 1em;
-  margin-left: 7px;
+  margin-left: 17px;  
   display: inline-block;
 }
 
@@ -110,6 +109,8 @@ li a {
   width: 100%;
   align-items: center;
   display: flex;
+  justify-content:center;
+ 
 }
 
 nav>ul>li:hover>a {
@@ -148,7 +149,7 @@ nav>ul>li:hover>p>a {
 @keyframes apparitionSousMenu {
   0% {
     box-shadow: 0px 3px 3px 1px rgba(171, 181, 111, 0);
-    border-top: 6px solid #fefffc;
+    border-top: 4px solid #fefffc;
   }
 
   30% {
@@ -158,7 +159,7 @@ nav>ul>li:hover>p>a {
 
   100% {
     max-height: 50em;
-    border-top: 6px solid rgb(5, 114, 5);
+    border-top: 4px solid rgb(5, 114, 5);
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
   }
 }
@@ -168,18 +169,18 @@ nav>ul>li:hover>p>a {
 }
 
 nav>ul>li>p {
-  font-size: 1.6em;
+  font-size: 1.5em;
   background-color: rgb(255, 255, 255);
-  margin: 32px 0 0 0;
+  margin: 30px 0 0 0;
   font-family: "Anta", sans-serif;
   border-radius: 5px;
   transition: transform 1.5s ease;
 }
 
 nav>ul>li>p:hover {
-  font-size: 1.6em;
+  font-size: 1.5em;
   background-color: rgb(255, 255, 255);
-  margin: 32px 0 0 0;
+  margin: 30px 0 0 0;
   font-family: "Anta", sans-serif;
   border-radius: 5px;
   transform: scale(0.9);
@@ -210,20 +211,15 @@ nav>ul>li>p:hover {
   border-bottom: 1px solid #fff;
 }
 
-.burger_titre {
-  font-size: 0.8em;
+.burger_titre{
   color: #088214;
+  font-size: 1.2em;
+  text-shadow:#088214;  
 }
 
 .burger_titre:hover {
-  font-size: 0.8em;
-  color: #088214;
-  
-}
-
-.burger_titre_main {
-  color: #088214;
-  font-size: 1.2em;
+  font-size: 1.3em;  
+  text-shadow:#088214 5px 5px 15px;  
 }
 
 .header-title {
@@ -364,6 +360,7 @@ li {
   animation-name: slidein;
 }
 
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -460,8 +457,10 @@ h1 {
   max-width: 100%;
   margin: 0 2.8vw 1.9vw 2.8vw;
   border-radius: 1.4vw;
-  padding: 0 0 1vw 2.8vw;
+  border:white 2px solid; 
+  padding-top:5%;
 }
+
 
 .container_accueil::after {
   content: "";
@@ -487,6 +486,20 @@ h1 {
   border: rgb(255, 255, 255) 3px solid;
   transition: all 1.5s ease;
   box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.3);
+  animation-duration:1s;
+  animation-name: slideme;
+}
+
+@keyframes slideme {
+  from {
+    margin-left: -100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 30%;
+  }
 }
 
 .photo:hover {
@@ -500,7 +513,17 @@ h1 {
   opacity: 0.5;
 }
 
+@keyframes slideme {
+  from {
+    margin-left: -100%;
+    width: 0%;
+  }
 
+  to {
+    margin-left: 0%;
+    width: 0%;
+  }
+}
 
 .develloper {
   text-align: center;
@@ -609,15 +632,8 @@ h1 {
   /*background-image: linear-gradient(rgb(0, 0, 0), rgb(5, 114, 5));*/
   max-width: 100%;
   margin: 0 auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-left: 1.4vw;
-  padding-top: 1.4vw;
-  padding-bottom: 1.4vw;
-  /*box-shadow: 0.3472vw 0.3472vw 1.0417vw rgba(0, 0, 0, 0.3);*/
-  margin-top: 3.5vw;
-  border-radius: 1.4vw;
-
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .img_projet {
@@ -701,7 +717,8 @@ h1 {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  gap: 7vw;
+  gap: 7vw;  
+  border-radius:4vw;
 }
 
 .container_ecole {
@@ -711,7 +728,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 10vw;
-  gap: 5vw;
+  gap: 10vw;
   transition: all 0.7s ease;
 
 }
@@ -724,8 +741,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
-  transition: all 1.5s ease;
+  gap: 30vw;
+  transition: all 0.5s ease;
 
 }
 
@@ -752,7 +769,7 @@ h1 {
   align-items: center;
   flex-direction: row-reverse;
   gap: 30vw;
-  transition: all 1.5s ease;
+  transition: all 0.5s ease;
 }
 
 
@@ -785,7 +802,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 10vw;
-  gap: 5vw;
+  gap: 10vw;
   transition: all 0.7s ease;
 
 }
@@ -798,7 +815,13 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 30vw;
-  transition: all 1.5s ease;
+  transition: all 0.7s ease;
+}
+.separation_etude {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 4vw;
 }
 
 .separation_etude1 {
@@ -809,13 +832,6 @@ h1 {
   Background-color: white;
   position: relative;
   box-shadow: -10px 9px 2px black;
-}
-
-.separation_etude {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4vw 4vw;
 }
 
 .separation_etude2 {
@@ -865,14 +881,16 @@ h1 {
 }
 
 .container_contact {
-  padding-top: 1%;
-  padding-bottom: 2%;
+  padding:10% 0;
+  margin:0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 100%;
   gap: 4vh;
+  border:white 2px solid;
+  border-radius:4vw;
 }
 
 .titre_contact {
@@ -915,7 +933,7 @@ h1 {
   right: 1vw;
   transition: filter 1.5s ease;
   transition: all 2s ease;
-  filter: drop-shadow(6px 4px 0px rgb(255, 255, 255));
+  filter: drop-shadow(4px 4px 0px rgb(255, 255, 255));
 }
 
 .github:hover {
@@ -933,18 +951,18 @@ h1 {
   height: 18vw;
   width: 15vw;
   position: relative;
-  bottom: 4.1vh;
+  bottom: 3.1vh;
   left: 1.5vw;
   transition: filter 1.5s ease;
   transition: all 2s ease;
-  filter: drop-shadow(6px 4px 0px rgb(255, 255, 255));
+  filter: drop-shadow(4px 4px 0px rgb(255, 255, 255));
 }
 
 .linkedin:hover {
   position: relative;
-  width: 15vw;
   height: 18vw;
-  bottom: 5vh;
+  width: 15vw;  
+  bottom: 3.1vh;
   filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
   transition: filter 0.3s ease;
   transform: scale(1.2);
@@ -955,10 +973,10 @@ h1 {
   width: 12vw;
   height: 14.4vw;
   position: relative;
-  bottom: 3.2vh;
+  bottom: 2vh;
   transition: filter 1.5s ease;
   transition: all 2s ease;
-  filter: drop-shadow(8px 4px 0px rgb(255, 255, 255));
+  filter: drop-shadow(4px 4px 0px rgb(255, 255, 255));
 }
 
 .instagram:hover {
@@ -979,7 +997,7 @@ h1 {
   top: 5vh;
   transition: filter 1.5s ease;
   transition: all 2s ease;
-  filter: drop-shadow(8px 4px 0px rgb(255, 255, 255));
+  filter: drop-shadow(4px 4px 0px rgb(255, 255, 255));
 }
 
 .facebook:hover {
@@ -1017,25 +1035,28 @@ h1 {
   Background-color: white;
   position: relative;
   box-shadow: 10px 9px 2px black;
-
 }
-
-
-.envellope {
-  max-width: 10%;
-
-  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
-  transition: filter 0.3s ease;
-
-
+.div_envellope{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    gap:2vh;
 }
-
 .lettre {
-  width: 12vw;
-  height: 15vw;
+  width: 10vw;
+  height: 13vw;
   border-radius: 10%;
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255)); 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
+.mail{
+  text-decoration:none;
+  font-size:1.3em;
+  color:rgb(201, 182, 5);
+}
 
 input[type=text],
 textarea,
@@ -1083,9 +1104,8 @@ label {
 input[type=submit] {
   background-color: #000000;
   color: white;
-
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 2vw;
   transition: all 1.5s ease;
@@ -1116,7 +1136,10 @@ input[type=submit]:hover {
 }
 
 .container_form {
-
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 0 10vw;
@@ -1170,7 +1193,7 @@ input[type=submit]:hover {
 
 
 
-@media screen and (min-width: 854px) {
+@media screen and (min-width: 1205px) {
 
   .header {
     display: none;
@@ -1197,7 +1220,7 @@ input[type=submit]:hover {
     width: 10vw;
     height: 15vw;
     left: 43.5vw;
-    margin-top: 45vh;
+    top: 23vh;
   }
 
   .separation_index {
@@ -1274,10 +1297,9 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4vw 0vw;
     gap: 1vw;
     position: relative;
-    bottom: 4vh;
+    
   }
 
   .separation_about1 {
@@ -1305,28 +1327,18 @@ input[type=submit]:hover {
     font-family: "Anta", sans-serif;
     text-shadow: rgb(1, 1, 1) 0px 0px 40px;
     position: relative;
-    bottom: 5vh;
+    bottom: 8vh;
   }
   .container_accueil {
+    display: block;
     max-width: 100%;
-    margin: 0 2.8vw 0 2.8vw;
+    margin: 0 2% 0 2%;
     border-radius: 1.4vw;
     padding: 0 0 1vw 2.8vw;
-    position: relative;
-    bottom: 13vh;
-  }
-
-  .container_accueil::after {
-    content: "";
-    display: block;
-    clear: both;
-
-  }
-
-  .container_accueil p {
-    line-height: 2em;
-    font-size: 2.0833vw;
-    text-align: justify;
+    position:relative;
+    bottom:14vh;
+    padding-bottom:2%;
+    padding-top:2%;
   }
 
   .photo {
@@ -1343,23 +1355,36 @@ input[type=submit]:hover {
   }
 
   .photo:hover {
+    
     height: 25vw;
-    width: 30vw;
+    width: 30vw;   
     border-radius: 50%;
     float: left;
     shape-outside: margin-box;
     margin: 0 2vw 0 2vw;
     transition: all 0.7s ease;
     opacity: 0.5;
+    animation-duration:1s;
+    animation-name: slideme;
+  }
+  @keyframes slideme {
+    display:none;
+    from {
+    
+      display:none;
+    }
+  
+    to {
+   
+      display:none;
+    }
   }
 
-
-
-  .develloper {
+   .develloper {
     text-align: center;
-    font-size: 4vw;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    font-size: 3vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-family: "Anta", sans-serif;
     color: white;
     text-shadow: 10px 10px 4px rgb(0, 0, 0)
@@ -1367,9 +1392,9 @@ input[type=submit]:hover {
 
   .develloper:hover {
     text-align: center;
-    font-size: 4vw;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    font-size: 3vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-family: "Anta", sans-serif;
     color: white;
     text-shadow: 24px 24px 24px rgb(0, 0, 0);
@@ -1378,18 +1403,18 @@ input[type=submit]:hover {
   .texte_accueil {
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 3em !important;
+    font-size: 2em !important;
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "Dancing Script", cursive;
     color: white;
   }
 
   .about_accueil {
     text-align: center;
-    font-size: 3em;
-    color: rgb(13, 40, 20);
-    margin-bottom: 10px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+   
   }
 
 
@@ -1405,7 +1430,7 @@ input[type=submit]:hover {
 
   .separation_projet1 {
     height: 0.2vw;
-    width: 25vw;
+    width: 35vw;
     display: flex;
     Background-color: white;
     box-shadow: -10px 9px 2px rgb(72, 183, 62);
@@ -1413,7 +1438,7 @@ input[type=submit]:hover {
 
   .separation_projet2 {
     height: 0.2vw;
-    width: 25vw;
+    width: 35vw;
     display: flex;
     text-align: center;
     Background-color: white;
@@ -1685,7 +1710,7 @@ input[type=submit]:hover {
 
   .donkey_logo {
     width: 15vw;
-    height: 15vh;
+    height: 17vh;
     border-radius: 2vw;
     display: flex;
     justify-content: center;
@@ -1727,7 +1752,7 @@ input[type=submit]:hover {
   }
 
   .titre_contact {
-    font-size: 5em;
+    font-size: 6em;
   }
 
   .telephone {
@@ -1780,10 +1805,10 @@ input[type=submit]:hover {
   }
 
   .linkedin {
-    height: 18vw;
+    height: 17vw;
     width: 15vw;
     position: relative;
-    bottom: 5vh;
+    bottom: 4.7vh;
     left: 1.5vw;
     transition: filter 1.5s ease;
     transition: all 2s ease;
@@ -1793,8 +1818,9 @@ input[type=submit]:hover {
   .linkedin:hover {
     position: relative;
     width: 15vw;
-    height: 18vw;
-    bottom: 5vh;
+    height: 17vw;
+    bottom: 4.7vh;
+    left:1.5vw;
     filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
     transition: filter 0.3s ease;
     transform: scale(1.2);
@@ -1803,7 +1829,7 @@ input[type=submit]:hover {
 
   .instagram {
     width: 12vw;
-    height: 14.4vw;
+    height: 13.8vw;
     position: relative;
     bottom: 1vh;
     transition: filter 1.5s ease;
@@ -1814,7 +1840,7 @@ input[type=submit]:hover {
   .instagram:hover {
     position: relative;
     width: 12vw;
-    height: 14, 4vw;
+    height: 13,8vw;
     margin-bottom: 1vw;
     filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
     transition: filter 0.3s ease;
@@ -1870,20 +1896,37 @@ input[type=submit]:hover {
 
   }
 
+  .div_envellope{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    top:15vh;
+    gap:15vh;
+      
+  }
 
-  .envellope {
-    max-width: 10%;
-
-    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
-    transition: filter 0.3s ease;
-
-
+  .mail{
+    text-decoration:none;
+    font-size:4em;
+    color:rgb(201, 182, 5);
+    border: rgb(201, 182, 5) 2px solid;
+    padding:2% 2%;
+    border-radius:20vh;
+    position:relative;
+    bottom:18vh;
   }
 
   .lettre {
     width: 12vw;
-    height: 15vw;
-    border-radius: 10%;
+    height: 12vw;
+    border-radius: 10%; 
+    max-width: 100%;
+    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+    position:relative;
+    bottom:15vh;
+    
   }
 
 
@@ -1933,7 +1976,6 @@ input[type=submit]:hover {
   input[type=submit] {
     background-color: #000000;
     color: white;
-
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -1944,8 +1986,8 @@ input[type=submit]:hover {
   }
 
   input[type=submit]:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(10, 102, 21);
+    color: rgb(255, 255, 255);
     box-shadow: rgb(0, 0, 0) 0 0 40px;
     transition: box-shadow 0.3s ease;
   }
@@ -1954,7 +1996,7 @@ input[type=submit]:hover {
 
     text-align: center;
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
     display: flex;
     justify-content: center;
     text-shadow: black 5px 5px 35px;
@@ -1966,13 +2008,16 @@ input[type=submit]:hover {
   }
 
   .container_form {
-
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
     box-sizing: border-box;
     border-radius: 5px;
     padding: 0 10vw;
     max-width: 100%;
     margin: 0 20vw;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
 
   }
 
@@ -1993,10 +2038,8 @@ input[type=submit]:hover {
   }
 
   #input_form {
-    position: relative;
-    width: 14vw;
-    height: 9vh;
-    font-size: 2.5em;
+    
+    font-size: 2em;
     left: 12vw;
   }
 
@@ -2013,7 +2056,7 @@ input[type=submit]:hover {
 @media screen and (min-width: 600px) {
 
   body {
-    background: linear-gradient(rgb(27, 75, 27), rgba(40, 69, 58, 0.5), rgb(9, 52, 9)),
+    background: linear-gradient(rgb(35, 97, 35), rgba(40, 69, 58, 0.5), rgb(15, 87, 15)),
       url("./media/fondecran.jpg")fixed;
     background-size: cover;
   }
